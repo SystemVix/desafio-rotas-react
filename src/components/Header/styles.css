@@ -1,0 +1,37 @@
+header
+{
+   align-items: center;
+   background-color: var(--cor-fundo-azul);
+   color: var(--cor-fonte-branca);
+   display: flex;
+   height: 70px;
+}
+
+.conteiner-header
+{
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+}
+
+.imagem
+{
+   width: 30px;
+}
+
+.menu-ativo
+{
+   font-weight: 700;
+}
+
+.opcao-item
+{
+   margin-right: 20px;
+}
+
+.opcoes-header
+{
+   display: flex;
+   font-size: 16px;
+}
+

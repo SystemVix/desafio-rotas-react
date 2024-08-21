@@ -4,6 +4,37 @@ url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100.
 :root {
   font-family: Inter, sans-serif;
   
+  --cor-fonte-branca: #FFFFFF;
+  --cor-fonte-preta: #000000;
+
+  --cor-fundo-azul: #2D28FF;
+  --cor-fundo-branco: #FFFFFF;
+  --cor-fundo-cinza: #C7C7C7;
+}
+
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover
+{
+  color: unset;
+  text-decoration: none;
+}
+
+body
+{
+  background-color: var(--cor-fundo-branco);
+}
+
+.conteiner-global
+{
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
 }
 
 
