@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './styles.css';
 
 export default function Header()
@@ -9,21 +9,21 @@ export default function Header()
             <div className="conteiner-global conteiner-header">
                <nav className="opcoes-header">
                   <NavLink to="/home" className={({isActive}) =>
-                     isActive ? "opcao-item menu-ativo" : "opcao-item"}>
+                     isActive ? "item-header menu-ativo" : "item-header"}>
                      Início
                   </NavLink>
                   <NavLink to="/products" className={({isActive}) =>
-                     isActive ? "opcao-item menu-ativo" : "opcao-item"}>
+                     isActive ? "item-header menu-ativo" : "item-header"}>
                      Produtos
                   </NavLink>
                   <NavLink to="/about" className={({isActive}) =>
-                     isActive ? "opcao-item menu-ativo" : "opcao-item"}>
+                     isActive ? "item-header menu-ativo" : "item-header"}>
                      Sobre
                   </NavLink>
                </nav>
-               <div>
+               <Link to="/">
                   <img className="imagem" src="./src/assets/home.svg" alt="Home" />
-               </div>
+               </Link>
             </div>
          </header>         
       </>

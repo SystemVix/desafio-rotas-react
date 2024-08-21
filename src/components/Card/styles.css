@@ -1,0 +1,13 @@
+.conteiner-card
+{
+   align-items: center;
+   background-color: var(--cor-fundo-cinza);
+   display: flex;
+   height: 60px;
+}
+
+.item-card
+{
+   font-size: 16px;
+   margin-right: 20px;
+}

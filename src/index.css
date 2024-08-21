@@ -37,4 +37,12 @@ body
   width: 100%;
 }
 
+.menu-ativo
+{
+   font-weight: 700;
+}
 
+.mt20
+{
+  margin-top: 20px;
+}

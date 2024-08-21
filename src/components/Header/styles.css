@@ -19,12 +19,7 @@ header
    width: 30px;
 }
 
-.menu-ativo
-{
-   font-weight: 700;
-}
-
-.opcao-item
+.item-header
 {
    margin-right: 20px;
 }
