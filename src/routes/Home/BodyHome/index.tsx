@@ -1,6 +1,8 @@
 export default function BodyHome()
 {
    return (
-      BodyHome
+      <div className="conteiner-global">
+         <h2 className="mt20">Bem-vindos!</h2>
+      </div>
    );
 }

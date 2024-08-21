@@ -1,6 +1,8 @@
 export default function BodyNotFound()
 {
    return (
-      BodyNotFound
+      <div className="conteiner-global">
+         <h2>Não encontrado!</h2>
+      </div>
    );
 }

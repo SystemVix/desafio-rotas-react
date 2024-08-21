@@ -1,6 +1,14 @@
 export default function Eletronics()
 {
    return (
-      Eletronics
+      <main>
+         <div className="conteiner-global">
+            <ul>
+               <li>Eletrônico 1</li>
+               <li>Eletrônico 2</li>
+               <li>Eletrônico 3</li>
+            </ul>
+         </div>
+      </main>
    );
 }

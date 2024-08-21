@@ -6,7 +6,7 @@ export default function Card()
    return (
       <main>
          <section className="conteiner-global">
-            <div className="conteiner-card mt20">
+            <nav className="conteiner-card mt20">
                <NavLink to="/computers" className={({isActive}) =>
                   isActive ? "item-card menu-ativo" : "item-card"}>
                   Computadores
@@ -19,7 +19,7 @@ export default function Card()
                   isActive ? "item-card menu-ativo" : "item-card"}>
                   Livros
                </NavLink>
-            </div>
+            </nav>
          </section>
       </main>
    );
