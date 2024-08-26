@@ -2,6 +2,10 @@
 export default function Eletrocnics()
 {
    return (
-      <h2>Eletronicos</h2>        
+      <ul className="mt20 lista-itens">
+         <li>Eletrônico 1</li>
+         <li>Eletrônico 2</li>
+         <li>Eletrônico 3</li>
+      </ul>        
    );
 }

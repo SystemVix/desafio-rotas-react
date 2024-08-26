@@ -8,7 +8,7 @@ export default function Header()
          <header>
             <div className="conteiner-global conteiner-header">
                <nav className="opcoes-header">
-                  <NavLink to="/home" className={({isActive}) =>
+                  <NavLink to="home" className={({isActive}) =>
                      isActive ? "item-header menu-ativo" : "item-header"}>
                      Início
                   </NavLink>
@@ -16,7 +16,7 @@ export default function Header()
                      isActive ? "item-header menu-ativo" : "item-header"}>
                      Produtos
                   </NavLink>
-                  <NavLink to="/about" className={({isActive}) =>
+                  <NavLink to="about" className={({isActive}) =>
                      isActive ? "item-header menu-ativo" : "item-header"}>
                      Sobre
                   </NavLink>

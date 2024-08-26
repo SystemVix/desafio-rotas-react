@@ -2,6 +2,10 @@
 export default function Computers()
 {
    return (
-      <h2>Computadores</h2>         
+      <ul className="mt20 lista-itens">
+         <li>Computador 1</li>
+         <li>Computador 2</li>
+         <li>Computador 3</li>
+      </ul>         
    );
 }
