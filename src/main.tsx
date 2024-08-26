@@ -1,8 +1,14 @@
+/*
+  DESAFIO - ROTAS REACT
+  Projeto integrante do curso FDM, módulo 10, capítulo 3.
+  Professor Nélio Alves
+*/
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import Home from './routes/Home/index.tsx'
 import NotFound from './routes/NotFound/index.tsx'
 import Products from './routes/Products/index.tsx'
@@ -16,6 +22,7 @@ createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App/>}>
+          <Route index element={<Navigate to='/home'/>}/>
           <Route path='home' element={<Home/>}/>        
           <Route path='products' element={<Products/>}>
             <Route path='computers' element={<Computers/>}/>
@@ -31,28 +38,3 @@ createRoot(document.getElementById('root')!).render(
   </StrictMode>,
 )
 
-/*
-<BrowserRouter>
-        <Routes>
-
-          <Route path="/" element={<Home/>}>
-            <Route index element={<Navigate to='/home'/>}/>
-
-            <Route path="home" element={<BodyHome/>}/>
-            
-            <Route path="products" element={<Products/>}>
-              <Route path="computers" element={<Computers/>}/>
-              <Route path="eletronics" element={<Eletronics/>}/>
-              <Route path="books" element={<Books/>}/>
-            </Route>
-
-            <Route path="about" element={<About/>}/>
-          </Route>
-          
-          <Route path="*" element={<NotFound/>}>
-            <Route index element={<BodyNotFound/>}/>
-          </Route>
-
-        </Routes>
-      </BrowserRouter> 
-*/
