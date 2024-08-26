@@ -1,13 +1,9 @@
-import { Outlet } from "react-router-dom";
-import Header from "../../components/Header";
-
+import './styles.css';
 export default function Home()
 {
    return (
-      <>
-         <Header/>
-         
-         <Outlet/>
-      </>
+      <div className="conteiner-global">
+         <h2 className="mt20">Bem-vindos!</h2>
+      </div>
    );
 }

@@ -1,26 +1,27 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, Outlet } from "react-router-dom";
 import './styles.css';
 
-export default function Card()
+export default function Products()
 {
    return (
-      <main>
+      <>      
          <section className="conteiner-global">
             <nav className="conteiner-card mt20">
-               <NavLink to="/computers" className={({isActive}) =>
+               <NavLink to="computers" className={({isActive}) =>
                   isActive ? "item-card menu-ativo" : "item-card"}>
                   Computadores
                </NavLink>
-               <NavLink to="/eletronics" className={({isActive}) =>
+               <NavLink to="eletronics" className={({isActive}) =>
                   isActive ? "item-card menu-ativo" : "item-card"}>
                   Eletrônicos
                </NavLink>
-               <NavLink to="/books" className={({isActive}) =>
+               <NavLink to="books" className={({isActive}) =>
                   isActive ? "item-card menu-ativo" : "item-card"}>
                   Livros
                </NavLink>
             </nav>
-         </section>
-      </main>
+            <Outlet/>               
+         </section>                           
+      </>
    );
 }

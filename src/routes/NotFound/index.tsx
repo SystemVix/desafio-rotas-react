@@ -1,12 +1,10 @@
-import Header from "../../components/Header";
-import BodyNotFound from "./BodyNotFound";
+import './styles.css';
 
 export default function NotFound()
 {
    return (
-      <>
-         <Header/>
-         <BodyNotFound/>
-      </>
+      <div className="conteiner-global">
+         <h2 className="mt20">Não encontrado!</h2>
+      </div>
    );
 }

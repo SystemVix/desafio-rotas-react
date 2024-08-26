@@ -12,7 +12,7 @@ export default function Header()
                      isActive ? "item-header menu-ativo" : "item-header"}>
                      Início
                   </NavLink>
-                  <NavLink to="/products" className={({isActive}) =>
+                  <NavLink to="products" className={({isActive}) =>
                      isActive ? "item-header menu-ativo" : "item-header"}>
                      Produtos
                   </NavLink>
@@ -20,12 +20,12 @@ export default function Header()
                      isActive ? "item-header menu-ativo" : "item-header"}>
                      Sobre
                   </NavLink>
-               </nav>
+               </nav>               
                <Link to="/">
                   <img className="imagem" src="./src/assets/home.svg" alt="Home" />
                </Link>
-            </div>
-         </header>         
+            </div>            
+         </header>                  
       </>
    );
 }
